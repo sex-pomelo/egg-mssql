@@ -15,8 +15,7 @@ module.exports = {
     'autod',
     'autod-egg',
     'eslint',
-    'eslint-config-egg',
-    'webstorm-disable-index',
+    'eslint-config-egg'
   ],
   exclude: [
     './test/fixtures',

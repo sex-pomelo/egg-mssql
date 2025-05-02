@@ -1,6 +1,6 @@
 {
-    "name": "egg-mssqlx",
-    "version": "1.0.3",
+    "name": "egg-mssqlt",
+    "version": "2.0.0",
     "description": "基本mssql的egg插件",
     "eggPlugin": {
         "name": "mssql"
@@ -11,21 +11,20 @@
         "egg-plugin"
     ],
     "dependencies": {
-        "mssql": "^6.2.0"
+        "mssql": "^11.0.1"
     },
     "devDependencies": {
-        "autod": "^3.0.0",
-        "autod-egg": "^1.0.0",
-        "egg": "^2.0.0",
-        "egg-bin": "^4.3.0",
-        "egg-ci": "^1.8.0",
-        "egg-mock": "^3.13.0",
-        "eslint": "^4.11.0",
-        "eslint-config-egg": "^5.1.0",
-        "webstorm-disable-index": "^1.2.0"
+        "autod": "^3.1.2",
+        "autod-egg": "^1.1.0",
+        "egg": "^3.30.1",
+        "egg-bin": "^6.13.0",
+        "egg-ci": "^2.2.0",
+        "egg-mock": "^5.15.1",
+        "eslint": "^8.57.1",
+        "eslint-config-egg": "^14.1.0"
     },
     "engines": {
-        "node": ">=8.0.0"
+        "node": ">=18.0.0"
     },
     "scripts": {
         "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",

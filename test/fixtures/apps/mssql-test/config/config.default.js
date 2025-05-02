@@ -4,17 +4,28 @@ exports.keys = '123456';
 exports.mssql = {
   clients: {
     db1: {
-      server: '192.168.0.1',
+      server: '127.0.0.1',
       user: 'sa',
+      port: 11433,
       password: '',
-      database: 'db1',
+      database: 'plat',
+      options: {
+        encrypt: false,
+        enableArithAbort: true,
+        // trustServerCertificate: true, // Set to true if using self-signed certificates
+      },
     },
     db2: {
-      server: '192.168.0.2',
+      server: '127.0.0.1',
       user: 'sa',
-      port: 1433,
+      port: 11433,
       password: '',
-      database: 'db2',
+      database: 'plat',
+      options: {
+        encrypt: false,
+        enableArithAbort: true,
+        // trustServerCertificate: true, // Set to true if using self-signed certificates
+      },
     },
   },
 };
